@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, configs, ... }:
 
 {
   # Read Nix-on-Droid changelog before changing this value
@@ -16,6 +16,10 @@
       imports = [
         ./programs.nix
       ];
+
+      home.packages = [
+        pkgs.fastfetch
+      ]
     };
 
   # or if you have a separate home.nix already present:
