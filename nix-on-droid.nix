@@ -3,27 +3,26 @@
 {
   # Simply install just the packages
   environment.packages = with pkgs; [
-    # User-facing stuff that you really really want to have
-    vim # or some other editor, e.g. nano or neovim
+    procps
+    killall
+    diffutils
+    findutils
+    utillinux
+    tzdata
+    hostname
+    man
+    gnugrep
+    gnupg
+    gnused
+    gnutar
+    bzip2
+    gzip
+    xz
+    zip
+    unzip
 
-    # Some common stuff that people expect to have
-    #procps
-    #killall
-    #diffutils
-    #findutils
-    #utillinux
-    #tzdata
-    #hostname
-    #man
-    #gnugrep
-    #gnupg
-    #gnused
-    #gnutar
-    #bzip2
-    #gzip
-    #xz
-    #zip
-    #unzip
+    vim
+    nerd-fonts.jetbrains-mono
   ];
 
   # Backup etc files instead of failing to activate generation if a file already exists in /etc
@@ -34,6 +33,7 @@
 
   imports = [
     ./home/manager.nix
+    ./termux.nix
   ];
   # Set up nix for flakes
   nix.extraOptions = ''
