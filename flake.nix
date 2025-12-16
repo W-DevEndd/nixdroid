@@ -21,8 +21,6 @@
       pkgs = import nixpkgs { system = "aarch64-linux"; };
       modules = [
         ./nix-on-droid.nix
-        # home-manager.nixosModules.home-manager
-        ./home/manager.nix
       ];
     };
 

@@ -12,23 +12,10 @@
       # Read home-manager changelog before changing this value
       home.stateVersion = "24.05";
 
-      programs.git = {
-        enable = true;
-        userName = "W. Dev Endd";
-        userEmail = "W-DevEndd@github.com";
-        extraConfig = {
-          init.defaultBranch = "main";
-          push.autoSetupRemote = true; # Example: automatically set upstream for pushed branches
-        };
-        aliases = {
-          ci = "commit";
-          co = "checkout";
-          s = "status";
-        };
-        lfs.enable = true;
-      };
-
       # insert home-manager config
+      imports = [
+        ./programs.nix
+      ];
     };
 
   # or if you have a separate home.nix already present:
