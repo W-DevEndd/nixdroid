@@ -35,7 +35,6 @@
   imports = [
     ./home/manager.nix
   ];
-
   # Set up nix for flakes
   nix.extraOptions = ''
     experimental-features = nix-command flakes

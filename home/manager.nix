@@ -2,7 +2,7 @@
 
 {
   # Read Nix-on-Droid changelog before changing this value
-  system.stateVersion = "24.05";
+  system.stateVersion = "25.05";
 
   # insert Nix-on-Droid config
 
@@ -10,7 +10,7 @@
     { pkgs, ... }:
     {
       # Read home-manager changelog before changing this value
-      home.stateVersion = "24.05";
+      home.stateVersion = "25.05";
 
       programs.git = {
         enable = true;
