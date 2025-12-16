@@ -22,7 +22,6 @@
     unzip
 
     vim
-    nerd-fonts.jetbrains-mono
   ];
 
   # Backup etc files instead of failing to activate generation if a file already exists in /etc
@@ -33,7 +32,6 @@
 
   imports = [
     ./home/manager.nix
-    ./termux.nix
   ];
   # Set up nix for flakes
   nix.extraOptions = ''
