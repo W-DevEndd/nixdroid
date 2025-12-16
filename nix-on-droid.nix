@@ -32,9 +32,9 @@
   # Read the changelog before changing this value
   system.stateVersion = "24.05";
 
-  imports = [
-    ./home/manager.nix
-  ];
+  # imports = [
+  #   ./home/manager.nix
+  # ];
   # Set up nix for flakes
   nix.extraOptions = ''
     experimental-features = nix-command flakes
