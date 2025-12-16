@@ -19,7 +19,7 @@
 
       home.packages = [
         pkgs.fastfetch
-      ]
+      ];
     };
 
   # or if you have a separate home.nix already present:
