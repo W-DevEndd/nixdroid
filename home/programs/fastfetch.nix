@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  programs.neofetch = {
+  programs.fastfetch = {
     enable = true;
   };
 }
