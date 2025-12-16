@@ -2,7 +2,8 @@
 
 {
   imports = [
-    ./programs/git.nix
     ./programs/bash.nix
+    ./programs/git.nix
+    ./programs/neofetch.nix
   ];
 }
