@@ -4,6 +4,6 @@
   imports = [
     ./programs/bash.nix
     ./programs/git.nix
-    # ./programs/fastfetch.nix
+    ./programs/i3wm.nix
   ];
 }
