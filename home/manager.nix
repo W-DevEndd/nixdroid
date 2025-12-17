@@ -1,4 +1,4 @@
-{ pkgs, configs, ... }:
+{ pkgs, configs, lib, ... }:
 
 {
   # Read Nix-on-Droid changelog before changing this value
