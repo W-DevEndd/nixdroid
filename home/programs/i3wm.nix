@@ -1,7 +1,7 @@
-{ pkgs, lib, ... }:
+{ conig, lib, pkgs, ... }:
 
 {
-  xresources.extraConfig = "Xft.dpi: 168";
+  config.xresources.extraConfig = "Xft.dpi: 168";
   home.packages = with pkgs; [
     i3
     i3status
@@ -12,7 +12,7 @@
 
   xsession.windowManager.i3.config = {
     startup = [
-      { command = "${lib.getExe pkgs.xorg.xrdb} -merge ${xresources.path}"; }
+      { command = "${lib.getExe pkgs.xorg.xrdb} -merge ${config.xresources.path}"; }
     ];
   };
 }

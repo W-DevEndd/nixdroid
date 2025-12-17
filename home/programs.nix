@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ cpnfig, lib, pkgs, ... }:
 
 {
   imports = [
