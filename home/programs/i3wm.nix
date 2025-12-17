@@ -1,4 +1,4 @@
-{ conig, lib, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   config.xresources.extraConfig = "Xft.dpi: 168";
