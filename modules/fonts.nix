@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  packages = with pkgs; [
+  environment.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-emoji
