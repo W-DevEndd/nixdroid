@@ -8,7 +8,7 @@
 
   imports = [
     ./home/manager.nix
-    catppuccin.homeModules.catppuccin
+    # catppuccin.homeModules.catppuccin
     ./modules/config.nix
 
   ];
