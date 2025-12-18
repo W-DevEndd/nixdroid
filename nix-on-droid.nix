@@ -1,29 +1,6 @@
 { config, lib, pkgs, ... }:
 
 {
-  # Simply install just the packages
-  environment.packages = with pkgs; [
-    procps
-    killall
-    diffutils
-    findutils
-    utillinux
-    tzdata
-    hostname
-    man
-    gnugrep
-    gnupg
-    gnused
-    gnutar
-    bzip2
-    gzip
-    xz
-    zip
-    unzip
-
-    vim
-  ];
-
   # Backup etc files instead of failing to activate generation if a file already exists in /etc
   environment.etcBackupExtension = ".bak";
 
@@ -32,6 +9,7 @@
 
   imports = [
     ./home/manager.nix
+    ./modules/config.nix
   ];
   # Set up nix for flakes
   nix.extraOptions = ''
