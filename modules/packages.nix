@@ -29,6 +29,6 @@
     # xz
     # zip
     # unzip
-    ssh
+    openssh
   ];
 }
