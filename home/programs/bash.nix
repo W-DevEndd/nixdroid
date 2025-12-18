@@ -10,9 +10,20 @@
       flake-update = "nix flake update";
     };
 
-    bashrcExtra = "
+    initExtra = ''
       PS1=\"󱄅 \\w  \"
-      export DISPLAY=:1  
-    ";
-  };
-}
+      export DISPLAY=:1
+
+      git-commit ()
+      {
+          git add .
+          git commit -m "$1"
+      }
+
+      git-push ()
+      {
+          git-commit $@
+          git push
+      }
+    '';
+  }
