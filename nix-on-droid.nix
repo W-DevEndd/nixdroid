@@ -13,9 +13,9 @@
 
   ];
 
-  # nix.extraOptions = ''
-  #   experimental-features = nix-command flakes
-  # '';
+  nix.extraOptions = ''
+    experimental-features = nix-command flakes
+  '';
 
   time.timeZone = "Asia/Saigon";
 }
