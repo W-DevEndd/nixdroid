@@ -18,7 +18,7 @@
     # findutils
     # utillinux
     # tzdata
-    # hostname
+    hostname
     # man
     # gnugrep
     # gnupg
@@ -29,5 +29,6 @@
     # xz
     # zip
     # unzip
+    ssh
   ];
 }
