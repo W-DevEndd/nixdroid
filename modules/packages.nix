@@ -6,10 +6,10 @@
     vim
 
     # Theme
-    (catppuccin-gtk.overide {
-      accents = [ "red" ];
-      variant = "mocha";
-    })
+    # (catppuccin-gtk.overide {
+    #   accents = [ "red" ];
+    #   variant = "mocha";
+    # })
 
     # CLI
     procps
