@@ -11,7 +11,7 @@
     };
 
     initExtra = ''
-      PS1=\"󱄅 \\w  \"
+      PS1="󱄅 \w  "
       export DISPLAY=:1
 
       git-commit ()
