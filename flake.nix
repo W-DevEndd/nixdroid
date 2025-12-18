@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+    catppuccin.url = "github:catppuccin/nix/release-24.05";
 
     nix-on-droid = {
       url = "github:nix-community/nix-on-droid/release-24.05";
@@ -15,12 +16,15 @@
     };
   };
 
-  outputs = { self, nixpkgs, nix-on-droid, home-manager, ... }: {
+  outputs = { self, nixpkgs, nix-on-droid, home-manager, catppuccin, ... }: {
 
     nixOnDroidConfigurations.default = nix-on-droid.lib.nixOnDroidConfiguration {
       pkgs = import nixpkgs { system = "aarch64-linux"; };
       modules = [
         ./nix-on-droid.nix
+        catppuccin.nixosModules.catppuccin
+
+        home-manager.nixosModules.home-manager
       ];
     };
 

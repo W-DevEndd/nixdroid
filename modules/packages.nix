@@ -2,6 +2,14 @@
 
 {
   environment.packages = with pkgs; [
+    # Editor
+    vim
+
+    # Theme
+    (catppuccin-gtk.overide {
+      accents = [ "red" ];
+      variant = "mocha";
+    })
 
     # CLI
     procps
@@ -21,7 +29,5 @@
     xz
     zip
     unzip
-
-    vim
   ];
 }

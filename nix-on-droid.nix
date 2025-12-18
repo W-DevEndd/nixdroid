@@ -1,7 +1,6 @@
 { config, lib, pkgs, ... }:
 
 {
-  # Backup etc files instead of failing to activate generation if a file already exists in /etc
   environment.etcBackupExtension = ".bak";
 
   # Read the changelog before changing this value
@@ -9,13 +8,14 @@
 
   imports = [
     ./home/manager.nix
+    catppuccin.homeModules.catppuccin
     ./modules/config.nix
-  ];
-  # Set up nix for flakes
-  nix.extraOptions = ''
-    experimental-features = nix-command flakes
-  '';
 
-  # Set your time zone
-  #time.timeZone = "Europe/Berlin";
+  ];
+
+  # nix.extraOptions = ''
+  #   experimental-features = nix-command flakes
+  # '';
+
+  time.timeZone = "Asia/Saigon";
 }
