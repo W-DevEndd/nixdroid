@@ -17,5 +17,5 @@
     experimental-features = nix-command flakes
   '';
 
-  time.timeZone = "Asia/Saigon";
+  # time.timeZone = "Asia/Saigon";
 }
