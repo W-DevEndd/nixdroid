@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
-    catppuccin.url = "github:catppuccin/nix/release-24.05";
+    catppuccin.url = "github:catppuccin/nix/release-25.05";
 
     nix-on-droid = {
       url = "github:nix-community/nix-on-droid/release-24.05";
