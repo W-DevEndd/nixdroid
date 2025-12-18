@@ -11,8 +11,7 @@
       # insert home-manager config
       imports = [
         ./programs.nix
-        ./xorg/config.nix
-        ./dotfiles.nix
+        # ./dotfiles.nix
       ];
 
       home.packages = [
