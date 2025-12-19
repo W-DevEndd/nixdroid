@@ -31,5 +31,6 @@
     # zip
     # unzip
     openssh
+    shadow
   ];
 }
