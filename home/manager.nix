@@ -10,6 +10,7 @@
 
       # insert home-manager config
       imports = [
+        catppuccin.homeModules.catppuccin
         ./programs.nix
         # ./dotfiles.nix
       ];
