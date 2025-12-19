@@ -35,5 +35,6 @@
     shadow
 
     peaclock
+    tmux
   ];
 }
