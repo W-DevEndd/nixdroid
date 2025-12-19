@@ -33,5 +33,7 @@
     # unzip
     openssh
     shadow
+
+    peaclock
   ];
 }
