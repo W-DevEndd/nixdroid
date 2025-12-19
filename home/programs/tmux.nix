@@ -1,4 +1,4 @@
-{ pkgs, ... };
+{ pkgs, ... }:	
 
 {
   programs.tmux = {
@@ -8,6 +8,6 @@
       unbind C-b
       set -g prefix C-a
       bind C-a send-prefix
-    ''
+    '';
   };
 }
