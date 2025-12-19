@@ -4,5 +4,6 @@
   imports = [
     ./programs/bash.nix
     ./programs/git.nix
+    ./programs/tmux.nix
   ];
 }
