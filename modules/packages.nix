@@ -6,22 +6,22 @@
     vim
 
     # Theme
-    # (catppuccin-gtk.overide {
-    #   accents = [ "red" ];
-    #   variant = "mocha";
-    # })
+    (catppuccin-gtk.overide {
+      accents = [ "red" ];
+      variant = "mocha";
+    })
 
     # CLI
     procps
     which
-    # killall
+    killall
     # diffutils
     # findutils
     # utillinux
     # tzdata
     hostname
     # man
-    # gnugrep
+    gnugrep
     # gnupg
     # gnused
     # gnutar
