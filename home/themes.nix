@@ -2,7 +2,7 @@
 
 {
   imports = [
-    catppuccin.homeManagerModules.catppuccin
+    "${catppuccin}/modules/home-manager";
   ];
 
   catppuccin.gtk = {
