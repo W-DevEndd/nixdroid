@@ -6,7 +6,7 @@
     vim
 
     # Theme
-    (catppuccin-gtk.overide {
+    (catppuccin-gtk.override {
       accents = [ "red" ];
       variant = "mocha";
     })
@@ -15,6 +15,7 @@
     procps
     which
     killall
+    ncurses
     # diffutils
     # findutils
     # utillinux
