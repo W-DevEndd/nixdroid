@@ -10,9 +10,8 @@
 
       # insert home-manager config
       imports = [
-        catppuccin.homeManagerModules.catppuccin
         ./programs.nix
-        # ./dotfiles.nix
+        ./themes.nix
       ];
 
       home.packages = [
