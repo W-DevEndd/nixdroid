@@ -3,6 +3,7 @@
 {
   system.stateVersion = "24.05";
 
+  home-manager.extraSpecialArgs = { inherit inputs; };
   home-manager.config =
     { pkgs, ... }:
     {
