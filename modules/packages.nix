@@ -13,6 +13,7 @@
 
     # CLI
     procps
+    which
     # killall
     # diffutils
     # findutils
