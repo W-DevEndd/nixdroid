@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ... }:
+{ pkgs, config, lib, catppuccin, ... }:
 
 {
   system.stateVersion = "24.05";
@@ -10,7 +10,7 @@
 
       # insert home-manager config
       imports = [
-        catppuccin.homeModules.catppuccin
+        catppuccin.homeManagerModules.catppuccin
         ./programs.nix
         # ./dotfiles.nix
       ];
