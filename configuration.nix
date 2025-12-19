@@ -7,4 +7,6 @@
     ./home/manager.nix
     ./modules/config.nix
   ];
+
+  time.timeZone = "Asia/Ho_Chi_Minh";
 }
