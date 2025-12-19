@@ -12,7 +12,7 @@
     # })
 
     # CLI
-    # procps
+    procps
     # killall
     # diffutils
     # findutils
