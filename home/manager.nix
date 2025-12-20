@@ -10,7 +10,7 @@
     # insert home-manager config
     imports = [
       ./programs.nix
-      ./themes.nix
+      # ./themes.nix
     ];
 
     home.packages = [
