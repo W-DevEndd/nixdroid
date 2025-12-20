@@ -3,18 +3,19 @@
 {
   system.stateVersion = "24.05";
 
-  # home-manager.extraSpecialArgs = { inherit inputs; };
-  home-manager.config = {
-    home.stateVersion = "24.05";
+  home-manager = {
 
-    # insert home-manager config
     imports = [
       ./programs.nix
       ./themes.nix
     ];
 
-    home.packages = [
-      pkgs.fastfetch
-    ];
+    config = {
+      home.stateVersion = "24.05";
+
+      home.packages = [
+        pkgs.fastfetch
+      ];
+    };
   };
 }
