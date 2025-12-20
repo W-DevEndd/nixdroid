@@ -5,13 +5,14 @@
 
   home-manager = {
 
-    imports = [
-      ./programs.nix
-      ./themes.nix
-    ];
-
     config = {
       home.stateVersion = "24.05";
+
+      imports = [
+        ./programs.nix
+        # ./themes.nix
+      ];
+
 
       home.packages = [
         pkgs.fastfetch
