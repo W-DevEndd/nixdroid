@@ -5,7 +5,6 @@
 
   imports = [
     ./home/manager.nix
-    ./home/themes.nix
     ./modules/config.nix
   ];
 
