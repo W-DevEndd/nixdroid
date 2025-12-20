@@ -10,7 +10,7 @@
 
       imports = [
         ./programs.nix
-        ./themes.nix
+        # ./themes.nix
       ];
 
 
